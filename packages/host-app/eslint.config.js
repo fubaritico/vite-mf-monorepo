@@ -5,7 +5,7 @@ import tseslint from 'typescript-eslint'
 export default tseslint.config(
   rootEsLingConfig,
   {
-    ignores: ['dist', '@mf-types', '.___mf__temp', 'nodes_modules']
+    ignores: ['dist', '@mf-types', '.___mf__temp', 'nodes_modules'],
   },
   {
     files: ['**/*.{ts,tsx}'],
@@ -17,5 +17,5 @@ export default tseslint.config(
         tsconfigRootDir: import.meta.dirname,
       },
     },
-  },
+  }
 )

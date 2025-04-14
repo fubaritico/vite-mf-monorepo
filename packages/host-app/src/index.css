@@ -1,14 +1,23 @@
 :root {
   --text-color: light-dark(rgba(0, 51, 51, 0.87), rgba(204, 204, 204, 0.87));
-  --header-background-color: light-dark(rgba(219, 219, 219, 0.87), rgba(26, 26, 26, 0.87));
-  --header-text-shadow: light-dark(rgba(255, 255, 255, 0.87), rgba(51, 51, 51, 0.87));
-  --header-border-color: light-dark(rgba(255, 255, 255, 0.87), rgba(51, 51, 51, 0.87));
+  --header-background-color: light-dark(
+    rgba(219, 219, 219, 0.87),
+    rgba(26, 26, 26, 0.87)
+  );
+  --header-text-shadow: light-dark(
+    rgba(255, 255, 255, 0.87),
+    rgba(51, 51, 51, 0.87)
+  );
+  --header-border-color: light-dark(
+    rgba(255, 255, 255, 0.87),
+    rgba(51, 51, 51, 0.87)
+  );
 
-  --background-color: light-dark(#D6D6D6FF, #1a1a1a);
-  --background-gradient-ellipse-1: light-dark(#64D3E621, #e6646522);
-  --background-gradient-ellipse-2: light-dark(#64E6E633, #e6646533);
-  --background-gradient-circle-1: light-dark(#8B0C9F33, #4d9f0c33);
-  --background-gradient-ellipse-3: light-dark(#64E6C822, #e6646522);
+  --background-color: light-dark(#d6d6d6ff, #1a1a1a);
+  --background-gradient-ellipse-1: light-dark(#64d3e621, #e6646522);
+  --background-gradient-ellipse-2: light-dark(#64e6e633, #e6646533);
+  --background-gradient-circle-1: light-dark(#8b0c9f33, #4d9f0c33);
+  --background-gradient-ellipse-3: light-dark(#64e6c822, #e6646522);
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -23,14 +32,32 @@
   -moz-osx-font-smoothing: grayscale;
 
   background:
-          radial-gradient(ellipse at 33%, var(--background-gradient-ellipse-1), transparent),
-          radial-gradient(ellipse at 33% 100%, var(--background-gradient-ellipse-2) 0%, transparent 50%),
-          radial-gradient(circle at 100% 50%, var(--background-gradient-circle-1), transparent 50%),
-          radial-gradient(ellipse at center, var(--background-color), var(--background-color)) fixed;
+    radial-gradient(
+      ellipse at 33%,
+      var(--background-gradient-ellipse-1),
+      transparent
+    ),
+    radial-gradient(
+      ellipse at 33% 100%,
+      var(--background-gradient-ellipse-2) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      var(--background-gradient-circle-1),
+      transparent 50%
+    ),
+    radial-gradient(
+        ellipse at center,
+        var(--background-color),
+        var(--background-color)
+      )
+      fixed;
 }
 
 /* Reset the box-model */
-html, body {
+html,
+body {
   box-sizing: border-box;
 }
 
@@ -63,7 +90,7 @@ body {
   background: var(--header-background-color);
   height: 60px;
   border-bottom: 1px solid var(--header-border-color);
-  opacity: .5;
+  opacity: 0.5;
   text-align: left;
   color: var(--text-color);
   text-shadow: 0 0 10px var(--header-text-shadow);

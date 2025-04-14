@@ -28,8 +28,8 @@
     "declarationMap": true, // Map to original source (optional for debugging)
     "outDir": "dist", // Output directory for the build
     "emitDeclarationOnly": true, // Prevents building JavaScript files in case of confusion
-    "esModuleInterop": true, // For compatibility with CommonJS/ESModule
+    "esModuleInterop": true // For compatibility with CommonJS/ESModule
   },
   "include": ["src/types/index.d.ts", "src/**/*.ts", "src/**/*.tsx"], // Ensure the 'src' directory is included
-  "exclude": ["node_modules", "dist", "eslint.config.js"], // Exclude build folders and dependencies
+  "exclude": ["node_modules", "dist", "eslint.config.js"] // Exclude build folders and dependencies
 }

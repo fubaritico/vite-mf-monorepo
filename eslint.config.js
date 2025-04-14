@@ -27,6 +27,7 @@ export default tseslint.config(
       './packages/*/dist',
       'eslint.config.js',
       './packages/*/eslint.config.js',
+      './packages/*/vite.config.ts',
       'pnpm-lock.yaml',
       'pnpm-workspace.yaml',
       'commitlint.config.js',

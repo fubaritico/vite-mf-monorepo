@@ -4,10 +4,10 @@ import topLevelAwait from 'vite-plugin-top-level-await'
 import { federation } from '@module-federation/vite'
 import { NativeFederationTypeScriptRemote } from '@module-federation/native-federation-typescript/vite'
 
+import type { ModuleFederationOptions } from '@module-federation/vite/lib/utils/normalizeModuleFederationOptions'
 import type { UserConfig, CommonServerOptions } from 'vite'
-import type { IRemoteConfig } from './typescriptConfig'
 
-const remoteConfig: IRemoteConfig = {
+const remoteConfig: ModuleFederationOptions = {
   name: 'todo_components',
   filename: 'remoteEntry.js',
   exposes: {

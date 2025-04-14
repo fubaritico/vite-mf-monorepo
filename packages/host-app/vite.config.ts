@@ -28,9 +28,11 @@ const moduleFederationConfig2 = {
   shared: ['react'],
 }
 
-export default defineConfig(({mode}) => ({
+export default defineConfig(({ mode }) => ({
   plugins: [
-    ...(mode !== 'production' ? [NativeFederationTypeScriptHost({ moduleFederationConfig })] : []),
+    ...(mode !== 'production'
+      ? [NativeFederationTypeScriptHost({ moduleFederationConfig })]
+      : []),
     federation(moduleFederationConfig2),
     react(),
   ],

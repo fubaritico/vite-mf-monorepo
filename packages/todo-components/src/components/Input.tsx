@@ -10,7 +10,7 @@ export interface InputProps {
 }
 
 const Input: FC<InputProps> = ({ onChange, onSubmit, value }) => {
-  console.log('Input::render')
+  // console.log('Input::render')
   return (
     <form
       css={styles.form}

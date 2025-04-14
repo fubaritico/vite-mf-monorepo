@@ -10,8 +10,8 @@ init({
   name: 'host-app',
   remotes: [
     {
-      name: 'todo_cpmponents',
-      alias: 'todo_cpmponents',
+      name: 'todo_components',
+      alias: 'todo_components',
       entry: 'http://localhost:3000/remoteEntry.js',
     },
   ],

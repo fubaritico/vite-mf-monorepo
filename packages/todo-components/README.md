@@ -131,9 +131,8 @@ export default defineConfig({
 })
 ```
 
-And in the remote you need to use concurrently with the `@module-federation/vite` plugin this plugin to export types 
+And in the remote you need to use concurrently with the `@module-federation/vite` plugin this plugin to export types
 and federation. You'll need to expose them thanks to the proxy configuration. See configuration below:
-
 
 ```tsx
 import { defineConfig } from 'vite'
@@ -268,7 +267,6 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </StrictMode>
 )
-
 ```
 
 So, now, you'll have a standalone remote visible in its own server, a host where you can import all or parts of
@@ -305,7 +303,6 @@ function App() {
 }
 
 export default App
-
 ```
 
 ### Use of loadRemote (lazy loading of remote exposed components)
@@ -342,13 +339,12 @@ function App() {
 }
 
 export default App
-
 ```
 
 From the documentation:
 
-Used to load initialized remote modules. When used with the build plugin, it can be directly loaded through 
-the native import("remote name/expose") syntax, and the build plugin will automatically convert it 
+Used to load initialized remote modules. When used with the build plugin, it can be directly loaded through
+the native import("remote name/expose") syntax, and the build plugin will automatically convert it
 to loadRemote("remote name/expose") usage.
 
 So in the example above you don't need to use loadRemote directly.
@@ -359,6 +355,6 @@ Because CSS purging and generating a global CSS, tailwind won't work.
 As an option, `twind` is not compatible with current versions of React & TypeScript.
 
 To be able to get styles from remote and/or remote exposed components, one have to use
-styles as modules to embed them with the exposed components. 
+styles as modules to embed them with the exposed components.
 
-### Integrating the whole thing in a monorepo 
+### Integrating the whole thing in a monorepo

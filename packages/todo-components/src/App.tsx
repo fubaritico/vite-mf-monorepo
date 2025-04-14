@@ -20,7 +20,7 @@ function App() {
     'Write some tests',
   ])
 
-  console.log('Remote::App::render')
+  // console.log('Remote::App::render')
 
   const onSubmit = () => {
     setTodos((prev) => [...prev, newTodo])
