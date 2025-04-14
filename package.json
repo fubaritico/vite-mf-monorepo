@@ -7,18 +7,26 @@
     "prod": "lerna run --stream prod",
     "clean": "lerna run --stream clean",
     "tdc:dev": "pnpm --filter todo-components dev",
-    "host:dev": "pnpm --filter host-app dev"
+    "host:dev": "pnpm --filter host-app dev",
+    "prepare": "husky"
   },
   "type": "module",
   "engines": {
     "node": ">=22.11.0"
   },
   "packageManager": "pnpm@9.12.3",
+  "lint-staged": {
+    "**/*.{js,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "**/*": "prettier --write --ignore-unknown"
+  },
   "devDependencies": {
-    "lerna": "^8.2.2",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "eslint": "^9.21.0",
-    "eslint-config-react": "^1.1.7",
     "eslint-config-prettier": "^10.1.2",
+    "eslint-config-react": "^1.1.7",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.2.6",
@@ -26,6 +34,9 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
+    "husky": "^9.1.7",
+    "lerna": "^8.2.2",
+    "lint-staged": "^15.5.1",
     "prettier": "3.5.3",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1"

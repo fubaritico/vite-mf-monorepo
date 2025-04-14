@@ -28,8 +28,9 @@ export default tseslint.config(
       'eslint.config.js',
       './packages/*/eslint.config.js',
       'pnpm-lock.yaml',
-      'pnpm-workspace.yaml'
-    ]
+      'pnpm-workspace.yaml',
+      'commitlint.config.js',
+    ],
   },
 
   // extends
@@ -54,94 +55,94 @@ export default tseslint.config(
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': [
         'warn',
-        {allowConstantExport: true},
+        { allowConstantExport: true },
       ],
-      "@typescript-eslint/no-unused-vars": "error",
-      "@typescript-eslint/no-explicit-any": "error",
-      "no-console": [
-        "error",
+      '@typescript-eslint/no-unused-vars': 'error',
+      '@typescript-eslint/no-explicit-any': 'error',
+      'no-console': [
+        'error',
         {
-          "allow": ["error", "warn"]
-        }
+          allow: ['error', 'warn'],
+        },
       ],
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
-      "react/require-default-props": "off",
-      "react/function-component-definition": [
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
+      'react/require-default-props': 'off',
+      'react/function-component-definition': [
         0,
         {
-          "namedComponents": "arrow-function"
-        }
+          namedComponents: 'arrow-function',
+        },
       ],
-      "react/react-in-jsx-scope": "off",
-      "react/jsx-props-no-spreading": "off",
-      "react/jsx-no-useless-fragment": [
+      'react/react-in-jsx-scope': 'off',
+      'react/jsx-props-no-spreading': 'off',
+      'react/jsx-no-useless-fragment': [
         0,
         {
-          "allowExpressions": true
-        }
+          allowExpressions: true,
+        },
       ],
-      "react/jsx-filename-extension": ["off"],
-      "import/prefer-default-export": ["off"],
-      "import/no-extraneous-dependencies": ["off"],
-      "import/order": [
-        "error",
+      'react/jsx-filename-extension': ['off'],
+      'import/prefer-default-export': ['off'],
+      'import/no-extraneous-dependencies': ['off'],
+      'import/order': [
+        'error',
         {
-          "groups": [
-            "builtin",
-            "external",
-            "internal",
-            "parent",
-            "sibling",
-            "index",
-            "object",
-            "type"
+          groups: [
+            'builtin',
+            'external',
+            'internal',
+            'parent',
+            'sibling',
+            'index',
+            'object',
+            'type',
           ],
-          "newlines-between": "always",
-          "pathGroups": [
+          'newlines-between': 'always',
+          pathGroups: [
             {
-              "pattern": "todo_components/**",
-              "group": "external",
-              "position": "before"
+              pattern: 'todo_components/**',
+              group: 'external',
+              position: 'before',
             },
             {
-              "pattern": "@Utils/**",
-              "group": "internal",
-              "position": "before"
+              pattern: '@Utils/**',
+              group: 'internal',
+              position: 'before',
             },
             {
-              "pattern": "@Atoms/**",
-              "group": "internal"
+              pattern: '@Atoms/**',
+              group: 'internal',
             },
             {
-              "pattern": "@Molecules/**",
-              "group": "internal"
+              pattern: '@Molecules/**',
+              group: 'internal',
             },
             {
-              "pattern": "@Components/**",
-              "group": "internal"
+              pattern: '@Components/**',
+              group: 'internal',
             },
             {
-              "pattern": "@Svg/**",
-              "group": "sibling",
-              "position": "after"
-            }
+              pattern: '@Svg/**',
+              group: 'sibling',
+              position: 'after',
+            },
           ],
-          "alphabetize": {
-            "order": "asc",
-            "orderImportKind": "asc",
-            "caseInsensitive": true
-          }
-        }
+          alphabetize: {
+            order: 'asc',
+            orderImportKind: 'asc',
+            caseInsensitive: true,
+          },
+        },
       ],
-      "sort-imports": [
-        "error",
+      'sort-imports': [
+        'error',
         {
-          "ignoreDeclarationSort": true,
-          "ignoreMemberSort": false,
-          "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
-        }
-      ]
+          ignoreDeclarationSort: true,
+          ignoreMemberSort: false,
+          memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+        },
+      ],
     },
-  },
+  }
 )
