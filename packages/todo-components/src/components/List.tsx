@@ -3,7 +3,7 @@ import { FC } from 'react'
 
 import styles from './List.module'
 
-export type ListProps = {
+export interface ListProps {
   className?: string
   items?: string[]
 }

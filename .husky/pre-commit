@@ -1,1 +1,3 @@
-
+pnpm run --filter host-app lint:fix
+pnpm run --filter todo_components lint:fix
+pnpm prettier --write .

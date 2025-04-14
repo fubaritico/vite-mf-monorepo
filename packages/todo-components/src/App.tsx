@@ -38,9 +38,9 @@ function App() {
         <div css={styles.todoContainer}>
           <h1 css={styles.appTitle}>My TodoList (Remote)</h1>
           <Input
-            onChange={(e: ChangeEvent<HTMLInputElement>) =>
+            onChange={(e: ChangeEvent<HTMLInputElement>) => {
               setNewTodo(e.target.value)
-            }
+            }}
             onSubmit={onSubmit}
             value={newTodo}
           />

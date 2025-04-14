@@ -1,1 +1,1 @@
-import('./main.tsx')
+await import('./main.tsx')
