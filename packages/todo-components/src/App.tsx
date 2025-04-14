@@ -1,8 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import viteLogo from '/vite.svg'
+
 import './App.css'
-import List from './components/List.tsx'
+
 import Input from './components/Input.tsx'
+import List from './components/List.tsx'
+
 import { useState } from 'react'
 
 import type { ChangeEvent } from 'react'

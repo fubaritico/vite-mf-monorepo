@@ -1,4 +1,5 @@
 {
+  "extends": "../../tsconfig.monorepo.json",
   "compilerOptions": {
     "baseUrl": ".",
 
@@ -29,5 +30,6 @@
       "*": ["./@mf-types/*"]
     }
   },
-  "include": ["src", "global.d.ts"]
+  "include": ["src", "global.d.ts"],
+  "exclude": ["node_modules", "dist", "eslint.config.js"]
 }
